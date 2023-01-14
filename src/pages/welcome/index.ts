@@ -1,3 +1,4 @@
+import { state } from "../../state";
 export function initWelcome(params) {
   const div = document.createElement("div");
   div.innerHTML = `
@@ -17,7 +18,10 @@ export function initWelcome(params) {
   formEl?.addEventListener("submit", (event) => {
     event.preventDefault();
     const target = event.target as any;
-    console.log(target.nombre.value);
+    const currentState = state.getState();
+    currentState.userName = target.nombre.value;
+    state.setState(currentState);
+    state.setUserName();
 
     params.goTo("/chat");
   });

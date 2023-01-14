@@ -1,9 +1,12 @@
+import { state } from "../../state";
+
 export function initChat() {
   const div = document.createElement("div");
+  const userName: string = state.getUserName();
   div.innerHTML = `
     <header class="header"></header>
     <div class="container">
-    <h1 class="title">Chat</h1>
+    <h1 class="title">Chat de ${userName}</h1>
     <div class="chat-area">
     </div>
     <form class="form">
