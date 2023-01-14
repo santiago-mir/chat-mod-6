@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    height: 65px;
+    width: 100%;
+    background-color: #FF8282;
+}
+
+.container{
+    min-height: 50vh;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.form-container, .form{
+    display: grid;
+    gap: 10px;
+}
+
+.chat-area{
+    height: 70vh;
+    background-color: rgb(218, 205, 205);
+    margin-bottom: 30px;
+}
+
+.label{
+    font-size: 24px;
+}
+
+.input, .button{
+    height: 55px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.input{
+    border: solid 2px;
+    
+}
+
+.button{
+    background-color: #9CBBE9;
+    font-size: 22px;
+    border: none;
+}
